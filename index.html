@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>jkzayah!</title>
-        <style>
-            body{
-                font-family: Arial;
-                margin: 0;
-            }
-            .header {
-              	padding: 60px;
-              	text-align: center;
-              	background: #004ecc;
-                color: white;
-              	font-size: 20px;
-              	margin-bottom: 25px;
-                outline: 5px #004ecc;
-            }
-            .button{
+<head>
+    <title>My CSS Grid!</title>
+    <style>
+        body{
+            color: #fff;
+            font-family: 'Arial';
+            text-align: center;
+        }
+        #content{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(4,minmax(150px,auto));
+            grid-gap: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        #content div{
+            padding: 30px;
+        }
+        #content div:nth-child(even){
+
+        }
+        .header{
+            grid-column: 1/7;
+            padding: 60px;
+            text-align: center;
+            background: #004ecc;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 25px;
+            outline: 5px #004ecc;
+        }
+        .content{
+            grid-column: 1/5;
+            grid-row: 2/3;
+            background: #004ecc;
+        }
+        .nav{
+            grid-column: 5/7;
+
+        }
+        .footer{
+            grid-column: 1/7;
+
+        }
+         .button{
                 width: 200px;
                 background-color: #3e71c2;
                 text-align: center;
-                margin-right: 4%;
-                margin-left: 50%;
                 margin-bottom: 5px;
                 padding: 10px;
                 outline: 5px ridge black;
                 font-weight: bold;
                 font-size: 15px;
-            }
-            .button:hover{
+         }
+        .button:hover{
               	background-color:#FF0000;
-            }
-            .column {
-              float: left;
-              width: 50%;
-            }
+        }
 
-            .row:after {
-              content: "";
-              display: table;
-              clear: both;
-            }
-
-        </style>
-    </head>
-    <body>
+    </style>
+</head>
+<body>
+    
+    <div id="content">
         
         <div class="header">
-          <h1>Welcome to jkzayah.github.io!</h1>
-          <h2>"You cant really do anything..." -JKzayah, CEO & founder</h2>
+            <h1>Welcome to jkzayah.github.io!</h1>
+          <p>"You cant really do anything..." -JKzayah, CEO & founder</p>
         </div>
         
-        <div class="row">
-          <div class="column">
-          	<p>
+        <div class="content">
+            <p>
               At jkzayah.github.io, we pride ourselves in bringing you an obscure landing page. The "we" being royal of course.
               When our founder JKzayah first created this marvel of a website he stood determined to always refer to himself in the third
               person in a deceptive attempt to give visitors the impression that he had friends.
 
             </p>
-          </div>
-          <div class="column">
-          	<p class="button">About us</p>
+        </div>
+        
+        <div class="nav">
+            <p class="button">About us</p>
             <p class="button">Products & services</p>
             <p class="button">Contact us</p>
             <p class="button">Careers</p>
             <p class="button">Why the buttons don't work</p>
-          </div>
         </div>
         
-            
-        	
-            
-            
-            
+        <div class="four">4</div>
         
-        
-    </body>
+    </div>
+</body>
+</html>
