@@ -5,28 +5,40 @@
         <title>jkzayah!</title>
         <style>
             body{
-                font-family: Sans-serif;
+                font-family: Arial;
             }
             .header {
-              padding: 60px;
-              text-align: center;
-              background: #004ecc;
-              color: white;
-              font-size: 20px;
+              	padding: 60px;
+              	text-align: center;
+              	background: #004ecc;
+                color: white;
+              	font-size: 20px;
+              	margin-bottom: 25px;
             }
-            .box{
+            .button{
+                width: 200px;
                 background-color: #3e71c2;
                 text-align: center;
-                margin-left: 15%;
-                margin-right: 15%;
-                margin-bottom: 25px;
+                margin-right: 4%;
+                margin-left: 50%;
+                margin-bottom: 5px;
                 padding: 10px;
                 outline: 5px ridge black;
                 font-weight: bold;
                 font-size: 15px;
             }
-            .box:hover{
-               background-color:#FF0000;
+            .button:hover{
+              	background-color:#FF0000;
+            }
+            .column {
+              float: left;
+              width: 50%;
+            }
+
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
             }
 
         </style>
@@ -38,11 +50,25 @@
           <h2>"You cant really do anything..." -JKzayah, CEO & founder</h2>
         </div>
         
-        <p class="box">About us</p>
-        <p class="box">Products & services</p>
-        <p class="box">Contact us</p>
-        <p class="box">Careers</p>
-        <p class="box">Why the buttons don't work</p>
+        <div class="row">
+          <div class="column">
+          	<p>
+              At jkzayah.github.io, we pride ourselves in bringing you an obscure landing page. "we" being the royal of course.
+              At jkzayah.github.io, we pride ourselves in bringing you an obscure landing page. "we" being the royal of course.
+              At jkzayah.github.io, we pride ourselves in bringing you an obscure landing page. "we" being the royal of course.
+              At jkzayah.github.io, we pride ourselves in bringing you an obscure landing page. "we" being the royal of course.
+              At jkzayah.github.io, we pride ourselves in bringing you an obscure landing page. "we" being the royal of course.
+              At jkzayah.github.io, we pride ourselves in bringing you an obscure landing page. "we" being the royal of course.
+            </p>
+          </div>
+          <div class="column">
+          	<p class="button">About us</p>
+            <p class="button">Products & services</p>
+            <p class="button">Contact us</p>
+            <p class="button">Careers</p>
+            <p class="button">Why the buttons don't work</p>
+          </div>
+        </div>
+        
         
     </body>
-</html>
