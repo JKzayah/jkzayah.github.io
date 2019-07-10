@@ -43,6 +43,7 @@
         }
         .footer{
             grid-column: 1/7;
+            background: #004ecc;
 
         }
          .button{
@@ -58,7 +59,24 @@
         .button:hover{
               	background-color:#FF0000;
         }
-
+        
+        /*// ELEMENTS TO ANIMATE //*/
+        
+        .lizard-blue{
+            position: absolute;
+            left: -300px;
+            animation-name: walk;
+            animation-duration: 44s;
+            animation-timing-function: linear;
+        }
+        
+        /*// KEYFRAMES //*/
+        
+        @keyframes walk{
+            from{ transform: translateX(0px);}
+            to{ transform: translateX(1400px);}
+        }
+        
     </style>
 </head>
 <body>
@@ -87,7 +105,10 @@
             <p class="button">Why the buttons don't work</p>
         </div>
         
-        <div class="four">4</div>
+        <div class="footer">
+            <img class="lizard-blue" src="graphics/blue_lizard_gif.gif">
+        </div>
+
         
     </div>
 </body>
